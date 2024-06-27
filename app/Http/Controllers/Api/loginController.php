@@ -8,7 +8,7 @@ use App\Models\User;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\hash;
-
+// ddd
 class LoginController extends Controller
 {
     public function loginUser(Request $request)
