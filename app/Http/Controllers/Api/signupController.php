@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
-class ApiController extends Controller
+class signupController extends Controller
 {
     public function register(Request $request)
     {
