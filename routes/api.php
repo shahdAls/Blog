@@ -13,7 +13,7 @@ use  App\Http\Controllers\LoginController;
 | be assigned to the "api" middleware group. Make something great!
 |
 */
-
+//push
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
