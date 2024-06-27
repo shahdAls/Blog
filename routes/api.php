@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Api\ApiController;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -15,8 +15,9 @@ use App\Http\Controllers\Api\ApiController;
 */
 
 // register 
-Route::post('register', [ApiController::class, 'register']);
+Route::post('user/signup', [signupController::class, 'register']);
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+Route::post('/user/login', [LoginController::class, 'loginUser']);
